@@ -19,7 +19,7 @@ function TournamentForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch('/create-tournament', {
+      const response = await fetch('https://poker-tourneys-4dc28c083584.herokuapp.com/create-tournament', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

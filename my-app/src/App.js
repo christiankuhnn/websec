@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/upcoming-tournaments')
+    fetch('https://poker-tourneys-4dc28c083584.herokuapp.com/upcoming-tournaments')
       .then((response) => response.json())
       .then((data) => {
         this.setState({ upcomingTournaments: data });
